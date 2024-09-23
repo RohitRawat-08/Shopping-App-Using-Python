@@ -17,14 +17,10 @@ def main():
         match user_input:
 
             case 1: 
-                # print("Create Admin Log in")
                 login.CreateAdmin()
-                # ...
 
             case 2:
-                # print("Create User Log in")
                 login.CreateUser()
-                # ...
 
             case 3:
                 login.AdminLogIn()

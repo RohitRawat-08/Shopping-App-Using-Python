@@ -28,6 +28,8 @@ def AdminLogIn():
         try:
             if data[admin_name] == admin_password:
                 print("Admin login SuccessFully")
+                
+                
             else:
                 print(f"{admin_name} ,You Entered wrong Password ")
         except KeyError:
