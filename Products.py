@@ -12,47 +12,10 @@ ProductList()
 
 
 
-
-
-
 def addItemInCart():
 
-    item=[]
-    quantity=[]
-
-
-    ans = "yY"
-
-    while(ans in "Yy"):
-        p= int(input("\nEnter Product Id of the item which you want to Buy :"))
-        q= int(input("Enter the quantity of the item (in kg):"))
-        
-        item.append[p]
-        quantity.append[q]
-
-        ans = input("\nDo You want to more Item (Y/N):")
-
-    data = {
-        'ProductID': item,
-        'Quantity': quantity,
-    }
-
-
-    df1 = pd.DataFrame(data)
-    df2 = pd.read_excel(ProductFilePath)
-
-
-    result_inner = pd.merge(df1, df2, on='ProductID', how='inner')
-    result_inner.to_excel('userCartDetails.xlsx', sheet_name='MySheet', index=False)
-    # print(result_inner)
+    ...
     
-
-    
-   
-
-
-
-
 
 def SeeCart():
     df = pd.read_excel("userCartDetails.xlsx")
